@@ -1,0 +1,681 @@
+[
+    {
+        "BuildingTicker": "FP",
+        "BuildingRecipeId": null,
+        "Inputs": [
+            {
+                "CommodityName": "drinkingWater",
+                "CommodityTicker": "DW",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 3
+            },
+            {
+                "CommodityName": "caffeinatedBeans",
+                "CommodityTicker": "CAF",
+                "Weight": 0.8600000143051147,
+                "Volume": 1.0,
+                "Amount": 1
+            }
+        ],
+        "Outputs": [
+            {
+                "CommodityName": "pioneerLuxuryDrink",
+                "CommodityTicker": "COF",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 3
+            }
+        ]
+    },
+    {
+        "BuildingTicker": "FP",
+        "BuildingRecipeId": null,
+        "Inputs": [
+            {
+                "CommodityName": "polymerGranulate",
+                "CommodityTicker": "PG",
+                "Weight": 0.0020000000949949026,
+                "Volume": 0.0010000000474974513,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "water",
+                "CommodityTicker": "H2O",
+                "Weight": 0.20000000298023224,
+                "Volume": 0.20000000298023224,
+                "Amount": 10
+            }
+        ],
+        "Outputs": [
+            {
+                "CommodityName": "drinkingWater",
+                "CommodityTicker": "DW",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 10
+            }
+        ]
+    },
+    {
+        "BuildingTicker": "FP",
+        "BuildingRecipeId": null,
+        "Inputs": [
+            {
+                "CommodityName": "water",
+                "CommodityTicker": "H2O",
+                "Weight": 0.20000000298023224,
+                "Volume": 0.20000000298023224,
+                "Amount": 10
+            }
+        ],
+        "Outputs": [
+            {
+                "CommodityName": "drinkingWater",
+                "CommodityTicker": "DW",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 7
+            }
+        ]
+    },
+    {
+        "BuildingTicker": "PAC",
+        "BuildingRecipeId": null,
+        "Inputs": [
+            {
+                "CommodityName": "smallPlasticsBoard",
+                "CommodityTicker": "PSS",
+                "Weight": 0.009999999776482582,
+                "Volume": 0.10000000149011612,
+                "Amount": 4
+            },
+            {
+                "CommodityName": "drinkingWater",
+                "CommodityTicker": "DW",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 100
+            },
+            {
+                "CommodityName": "engineerFood",
+                "CommodityTicker": "FIM",
+                "Weight": 0.550000011920929,
+                "Volume": 0.5,
+                "Amount": 70
+            },
+            {
+                "CommodityName": "engineerLuxuryHealth",
+                "CommodityTicker": "VG",
+                "Weight": 0.20999999344348907,
+                "Volume": 0.10000000149011612,
+                "Amount": 2
+            },
+            {
+                "CommodityName": "polyEthylene",
+                "CommodityTicker": "PE",
+                "Weight": 0.009999999776482582,
+                "Volume": 0.009999999776482582,
+                "Amount": 160
+            },
+            {
+                "CommodityName": "technicianHealth",
+                "CommodityTicker": "MED",
+                "Weight": 0.30000001192092896,
+                "Volume": 0.10000000149011612,
+                "Amount": 5
+            },
+            {
+                "CommodityName": "engineerClothing",
+                "CommodityTicker": "HSS",
+                "Weight": 0.05000000074505806,
+                "Volume": 0.05000000074505806,
+                "Amount": 2
+            },
+            {
+                "CommodityName": "engineerTools",
+                "CommodityTicker": "PDA",
+                "Weight": 0.0020000000949949026,
+                "Volume": 0.0020000000949949026,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "engineerLuxuryDrink",
+                "CommodityTicker": "GIN",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 10
+            }
+        ],
+        "Outputs": [
+            {
+                "CommodityName": "engineerBundle",
+                "CommodityTicker": "EBU",
+                "Weight": 51.0,
+                "Volume": 46.0,
+                "Amount": 1
+            }
+        ]
+    },
+    {
+        "BuildingTicker": "PAC",
+        "BuildingRecipeId": null,
+        "Inputs": [
+            {
+                "CommodityName": "scientistTools",
+                "CommodityTicker": "WS",
+                "Weight": 0.05000000074505806,
+                "Volume": 0.5,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "polyEthylene",
+                "CommodityTicker": "PE",
+                "Weight": 0.009999999776482582,
+                "Volume": 0.009999999776482582,
+                "Amount": 280
+            },
+            {
+                "CommodityName": "technicianHealth",
+                "CommodityTicker": "MED",
+                "Weight": 0.30000001192092896,
+                "Volume": 0.10000000149011612,
+                "Amount": 5
+            },
+            {
+                "CommodityName": "scientistLuxuryDrink",
+                "CommodityTicker": "WIN",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 10
+            },
+            {
+                "CommodityName": "smallPlasticsBoard",
+                "CommodityTicker": "PSS",
+                "Weight": 0.009999999776482582,
+                "Volume": 0.10000000149011612,
+                "Amount": 8
+            },
+            {
+                "CommodityName": "scientistLuxuryHealth",
+                "CommodityTicker": "NST",
+                "Weight": 0.05000000074505806,
+                "Volume": 0.05000000074505806,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "scientistFood",
+                "CommodityTicker": "MEA",
+                "Weight": 0.6000000238418579,
+                "Volume": 0.5,
+                "Amount": 70
+            },
+            {
+                "CommodityName": "drinkingWater",
+                "CommodityTicker": "DW",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 100
+            },
+            {
+                "CommodityName": "scientistClothing",
+                "CommodityTicker": "LC",
+                "Weight": 0.05000000074505806,
+                "Volume": 0.05000000074505806,
+                "Amount": 2
+            }
+        ],
+        "Outputs": [
+            {
+                "CommodityName": "scientistBundle",
+                "CommodityTicker": "CBU",
+                "Weight": 54.0,
+                "Volume": 47.0,
+                "Amount": 1
+            }
+        ]
+    },
+    {
+        "BuildingTicker": "PAC",
+        "BuildingRecipeId": null,
+        "Inputs": [
+            {
+                "CommodityName": "polyEthylene",
+                "CommodityTicker": "PE",
+                "Weight": 0.009999999776482582,
+                "Volume": 0.009999999776482582,
+                "Amount": 50
+            },
+            {
+                "CommodityName": "drinkingWater",
+                "CommodityTicker": "DW",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 40
+            },
+            {
+                "CommodityName": "rations",
+                "CommodityTicker": "RAT",
+                "Weight": 0.20999999344348907,
+                "Volume": 0.10000000149011612,
+                "Amount": 40
+            },
+            {
+                "CommodityName": "pioneerClothing",
+                "CommodityTicker": "OVE",
+                "Weight": 0.019999999552965164,
+                "Volume": 0.02500000037252903,
+                "Amount": 5
+            },
+            {
+                "CommodityName": "pioneerLuxuryDrink",
+                "CommodityTicker": "COF",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 5
+            },
+            {
+                "CommodityName": "pioneerLuxuryClothing",
+                "CommodityTicker": "PWO",
+                "Weight": 0.05000000074505806,
+                "Volume": 0.05000000074505806,
+                "Amount": 2
+            }
+        ],
+        "Outputs": [
+            {
+                "CommodityName": "pioneerBundle",
+                "CommodityTicker": "PBU",
+                "Weight": 13.0,
+                "Volume": 8.0,
+                "Amount": 1
+            }
+        ]
+    },
+    {
+        "BuildingTicker": "PAC",
+        "BuildingRecipeId": null,
+        "Inputs": [
+            {
+                "CommodityName": "settlerTools",
+                "CommodityTicker": "PT",
+                "Weight": 0.25,
+                "Volume": 0.20000000298023224,
+                "Amount": 5
+            },
+            {
+                "CommodityName": "settlerLuxuryTools",
+                "CommodityTicker": "REP",
+                "Weight": 0.006000000052154064,
+                "Volume": 0.0020000000949949026,
+                "Amount": 2
+            },
+            {
+                "CommodityName": "drinkingWater",
+                "CommodityTicker": "DW",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 50
+            },
+            {
+                "CommodityName": "rations",
+                "CommodityTicker": "RAT",
+                "Weight": 0.20999999344348907,
+                "Volume": 0.10000000149011612,
+                "Amount": 60
+            },
+            {
+                "CommodityName": "settlerClothing",
+                "CommodityTicker": "EXO",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.05000000074505806,
+                "Amount": 5
+            },
+            {
+                "CommodityName": "polyEthylene",
+                "CommodityTicker": "PE",
+                "Weight": 0.009999999776482582,
+                "Volume": 0.009999999776482582,
+                "Amount": 100
+            },
+            {
+                "CommodityName": "settlerLuxuryDrink",
+                "CommodityTicker": "KOM",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 10
+            }
+        ],
+        "Outputs": [
+            {
+                "CommodityName": "settlerBundle",
+                "CommodityTicker": "SBU",
+                "Weight": 20.0,
+                "Volume": 13.0,
+                "Amount": 1
+            }
+        ]
+    },
+    {
+        "BuildingTicker": "PAC",
+        "BuildingRecipeId": null,
+        "Inputs": [
+            {
+                "CommodityName": "rations",
+                "CommodityTicker": "RAT",
+                "Weight": 0.20999999344348907,
+                "Volume": 0.10000000149011612,
+                "Amount": 70
+            },
+            {
+                "CommodityName": "technicianClothing",
+                "CommodityTicker": "HMS",
+                "Weight": 0.05000000074505806,
+                "Volume": 0.05000000074505806,
+                "Amount": 5
+            },
+            {
+                "CommodityName": "technicianHealth",
+                "CommodityTicker": "MED",
+                "Weight": 0.30000001192092896,
+                "Volume": 0.10000000149011612,
+                "Amount": 5
+            },
+            {
+                "CommodityName": "polyEthylene",
+                "CommodityTicker": "PE",
+                "Weight": 0.009999999776482582,
+                "Volume": 0.009999999776482582,
+                "Amount": 40
+            },
+            {
+                "CommodityName": "drinkingWater",
+                "CommodityTicker": "DW",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 75
+            },
+            {
+                "CommodityName": "smallPlasticsBoard",
+                "CommodityTicker": "PSS",
+                "Weight": 0.009999999776482582,
+                "Volume": 0.10000000149011612,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "technicianLuxuryHealth",
+                "CommodityTicker": "SC",
+                "Weight": 0.03999999910593033,
+                "Volume": 0.009999999776482582,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "technicianLuxuryDrink",
+                "CommodityTicker": "ALE",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 10
+            },
+            {
+                "CommodityName": "technicianTools",
+                "CommodityTicker": "SCN",
+                "Weight": 0.0010000000474974513,
+                "Volume": 0.0010000000474974513,
+                "Amount": 1
+            }
+        ],
+        "Outputs": [
+            {
+                "CommodityName": "technicianBundle",
+                "CommodityTicker": "TBU",
+                "Weight": 24.0,
+                "Volume": 16.0,
+                "Amount": 1
+            }
+        ]
+    },
+    {
+        "BuildingTicker": "LAB",
+        "BuildingRecipeId": null,
+        "Inputs": [
+            {
+                "CommodityName": "drinkingWater",
+                "CommodityTicker": "DW",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "nutrientSolution",
+                "CommodityTicker": "NS",
+                "Weight": 0.6000000238418579,
+                "Volume": 0.5,
+                "Amount": 1
+            }
+        ],
+        "Outputs": [
+            {
+                "CommodityName": "cryogenicFluid",
+                "CommodityTicker": "CST",
+                "Weight": 1.1399999856948853,
+                "Volume": 1.0,
+                "Amount": 3
+            }
+        ]
+    },
+    {
+        "BuildingTicker": "FER",
+        "BuildingRecipeId": null,
+        "Inputs": [
+            {
+                "CommodityName": "pineberries",
+                "CommodityTicker": "PIB",
+                "Weight": 0.30000001192092896,
+                "Volume": 1.0,
+                "Amount": 4
+            },
+            {
+                "CommodityName": "iodine",
+                "CommodityTicker": "I",
+                "Weight": 4.929999828338623,
+                "Volume": 1.0,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "ammonia",
+                "CommodityTicker": "AMM",
+                "Weight": 0.8600000143051147,
+                "Volume": 1.0,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "drinkingWater",
+                "CommodityTicker": "DW",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 10
+            },
+            {
+                "CommodityName": "calcium",
+                "CommodityTicker": "CA",
+                "Weight": 1.5399999618530273,
+                "Volume": 1.0,
+                "Amount": 1
+            }
+        ],
+        "Outputs": [
+            {
+                "CommodityName": "vitaEssence",
+                "CommodityTicker": "VIT",
+                "Weight": 0.8999999761581421,
+                "Volume": 1.0,
+                "Amount": 20
+            }
+        ]
+    },
+    {
+        "BuildingTicker": "FER",
+        "BuildingRecipeId": null,
+        "Inputs": [
+            {
+                "CommodityName": "chemicalReagents",
+                "CommodityTicker": "REA",
+                "Weight": 0.05000000074505806,
+                "Volume": 0.05000000074505806,
+                "Amount": 15
+            },
+            {
+                "CommodityName": "ammonia",
+                "CommodityTicker": "AMM",
+                "Weight": 0.8600000143051147,
+                "Volume": 1.0,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "drinkingWater",
+                "CommodityTicker": "DW",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 20
+            },
+            {
+                "CommodityName": "grapes",
+                "CommodityTicker": "GRA",
+                "Weight": 1.100000023841858,
+                "Volume": 1.0,
+                "Amount": 15
+            }
+        ],
+        "Outputs": [
+            {
+                "CommodityName": "scientistLuxuryDrink",
+                "CommodityTicker": "WIN",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 10
+            }
+        ]
+    },
+    {
+        "BuildingTicker": "FER",
+        "BuildingRecipeId": null,
+        "Inputs": [
+            {
+                "CommodityName": "carbohydrateGrains",
+                "CommodityTicker": "GRN",
+                "Weight": 0.8999999761581421,
+                "Volume": 1.0,
+                "Amount": 2
+            },
+            {
+                "CommodityName": "drinkingWater",
+                "CommodityTicker": "DW",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 2
+            },
+            {
+                "CommodityName": "einsteinium",
+                "CommodityTicker": "ES",
+                "Weight": 0.8799999952316284,
+                "Volume": 0.10000000149011612,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "ammonia",
+                "CommodityTicker": "AMM",
+                "Weight": 0.8600000143051147,
+                "Volume": 1.0,
+                "Amount": 1
+            }
+        ],
+        "Outputs": [
+            {
+                "CommodityName": "engineerLuxuryDrink",
+                "CommodityTicker": "GIN",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 4
+            }
+        ]
+    },
+    {
+        "BuildingTicker": "FER",
+        "BuildingRecipeId": null,
+        "Inputs": [
+            {
+                "CommodityName": "drinkingWater",
+                "CommodityTicker": "DW",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 3
+            },
+            {
+                "CommodityName": "antibacterialTreeFlowers",
+                "CommodityTicker": "HOP",
+                "Weight": 0.3499999940395355,
+                "Volume": 1.0,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "ammonia",
+                "CommodityTicker": "AMM",
+                "Weight": 0.8600000143051147,
+                "Volume": 1.0,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "carbohydrateGrains",
+                "CommodityTicker": "GRN",
+                "Weight": 0.8999999761581421,
+                "Volume": 1.0,
+                "Amount": 2
+            }
+        ],
+        "Outputs": [
+            {
+                "CommodityName": "technicianLuxuryDrink",
+                "CommodityTicker": "ALE",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 6
+            }
+        ]
+    },
+    {
+        "BuildingTicker": "FER",
+        "BuildingRecipeId": null,
+        "Inputs": [
+            {
+                "CommodityName": "herbs",
+                "CommodityTicker": "HER",
+                "Weight": 0.4000000059604645,
+                "Volume": 1.0,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "ammonia",
+                "CommodityTicker": "AMM",
+                "Weight": 0.8600000143051147,
+                "Volume": 1.0,
+                "Amount": 1
+            },
+            {
+                "CommodityName": "drinkingWater",
+                "CommodityTicker": "DW",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 4
+            }
+        ],
+        "Outputs": [
+            {
+                "CommodityName": "settlerLuxuryDrink",
+                "CommodityTicker": "KOM",
+                "Weight": 0.10000000149011612,
+                "Volume": 0.10000000149011612,
+                "Amount": 6
+            }
+        ]
+    }
+]

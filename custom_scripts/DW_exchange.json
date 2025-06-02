@@ -1,0 +1,364 @@
+{
+    "MaterialTicker": "DW",
+    "ExchangeCode": "NC1",
+    "MMBuy": 19.0,
+    "MMSell": 121.0,
+    "PriceAverage": 84.5,
+    "Ask": 84.5,
+    "AskCount": 2535,
+    "Bid": 77.80000305175781,
+    "BidCount": 10,
+    "Supply": 1014438,
+    "Demand": 625012,
+    "BuyingOrders": [
+        {
+            "OrderId": "0560696aeb8d64fab65b6770d0e03aa8",
+            "CompanyId": "aed4e7113b21e28868a007a55bc5bc90",
+            "CompanyName": "Brownieus Fuel Depot",
+            "CompanyCode": "BFD",
+            "ItemCount": 10,
+            "ItemCost": 77.80000305175781
+        },
+        {
+            "OrderId": "07b8ee561b69c28c803bfdd0127a56f3",
+            "CompanyId": "57e9bcd64902c5249fd1f8b9a5e73e17",
+            "CompanyName": "芒廷帕斯联合会",
+            "CompanyCode": "MPF",
+            "ItemCount": 80,
+            "ItemCost": 77.69999694824219
+        },
+        {
+            "OrderId": "0fcdf9b134a3d6a9f68b976f5afca3b2",
+            "CompanyId": "8d50d2175881e9316b4b2e6cf022a51e",
+            "CompanyName": "banda198",
+            "CompanyCode": "B198",
+            "ItemCount": 128289,
+            "ItemCost": 70.0
+        },
+        {
+            "OrderId": "2199cfc8b50cb3ecb1bb20e0b4903727",
+            "CompanyId": "ffa1f75d9bf465f2e3daea8829e1dd5f",
+            "CompanyName": "Lekvar Inc.",
+            "CompanyCode": "LEK",
+            "ItemCount": 100000,
+            "ItemCost": 40.0
+        },
+        {
+            "OrderId": "32a041d509dafba8dd427e2d98c98cd2",
+            "CompanyId": "68d282e10b2650dee8c75ff76cb16d38",
+            "CompanyName": "Lumber Liquidators",
+            "CompanyCode": "MM",
+            "ItemCount": 60434,
+            "ItemCost": 77.5
+        },
+        {
+            "OrderId": "71e8ad1a5175394a08fcda2867601aba",
+            "CompanyId": "b2b59e4e7c3fc99aa4d911ca9a38a0d4",
+            "CompanyName": "NEO Charter Exploration Market Maker",
+            "CompanyCode": "NCMM",
+            "ItemCount": null,
+            "ItemCost": 19.0
+        },
+        {
+            "OrderId": "785c9dbf0bd8fba1d886e6c8b4b2ec62",
+            "CompanyId": "50c6033bc4c463361815c6abe5108ca4",
+            "CompanyName": "aswx_company",
+            "CompanyCode": "ASWX",
+            "ItemCount": 5000,
+            "ItemCost": 70.30000305175781
+        },
+        {
+            "OrderId": "7a8f450d6ddd57307e993ddfbe66317b",
+            "CompanyId": "fe2be4d98df6512f825a4448aa9f70f0",
+            "CompanyName": "ScammersINC",
+            "CompanyCode": "SELL",
+            "ItemCount": 99,
+            "ItemCost": 20.0
+        },
+        {
+            "OrderId": "9413a0d2b3e13e75cb2c0bd6715aae8d",
+            "CompanyId": "e84251b56475af4cadd53cf351b16a24",
+            "CompanyName": "Int'l Import-Export Trading Co",
+            "CompanyCode": "IIET",
+            "ItemCount": 20000,
+            "ItemCost": 66.0999984741211
+        },
+        {
+            "OrderId": "9f97f6b002cc6db647693e58555af45e",
+            "CompanyId": "0b19a696af816b354f6980edac37c1b0",
+            "CompanyName": "Compound",
+            "CompanyCode": "GAIN",
+            "ItemCount": 200000,
+            "ItemCost": 75.0
+        },
+        {
+            "OrderId": "c0f6063cdfc42b1671c5f6db83b90670",
+            "CompanyId": "456d7a087fea532b72157d0ccf66fff0",
+            "CompanyName": "Malinko Holdings Corp",
+            "CompanyCode": "MHCO",
+            "ItemCount": 1000,
+            "ItemCost": 77.69999694824219
+        },
+        {
+            "OrderId": "dd341e61dfe33dd596dbf919edce6dd2",
+            "CompanyId": "e84251b56475af4cadd53cf351b16a24",
+            "CompanyName": "Int'l Import-Export Trading Co",
+            "CompanyCode": "IIET",
+            "ItemCount": 50000,
+            "ItemCost": 70.4000015258789
+        },
+        {
+            "OrderId": "e9a48c9854a112c91b19721c000ac39e",
+            "CompanyId": "d4d28d54de6e033441387ae90fabf9d3",
+            "CompanyName": "Interstellar Gaia",
+            "CompanyCode": "INGA",
+            "ItemCount": 10000,
+            "ItemCost": 75.0
+        },
+        {
+            "OrderId": "f7f35f5f39d1c5b45e091021496154cc",
+            "CompanyId": "ac0dbfef1f69ace3571644dc2a7143bd",
+            "CompanyName": "Entropy",
+            "CompanyCode": "ENTP",
+            "ItemCount": 50000,
+            "ItemCost": 77.5999984741211
+        }
+    ],
+    "SellingOrders": [
+        {
+            "OrderId": "03e02f10a8ed50f427a9b46174f8d45e",
+            "CompanyId": "9b3a2dca2645b1694bd184818ccfc2ed",
+            "CompanyName": "TiaKia",
+            "CompanyCode": "TIA",
+            "ItemCount": 20000,
+            "ItemCost": 85.0
+        },
+        {
+            "OrderId": "29599103f5a437583f3bfc9c38f10f03",
+            "CompanyId": "401961f8ff7a37626d3fa85da5d0e1c7",
+            "CompanyName": "Wisely2",
+            "CompanyCode": "WISE",
+            "ItemCount": 2000,
+            "ItemCost": 93.80000305175781
+        },
+        {
+            "OrderId": "339fb17cebe301ca3d858b14c5d7f673",
+            "CompanyId": "a13eac31e6ac894649202e797402da1d",
+            "CompanyName": "Ascensus",
+            "CompanyCode": "ACS",
+            "ItemCount": 10000,
+            "ItemCost": 94.0
+        },
+        {
+            "OrderId": "3c61c08d170ace1ef8a3335b3c3b1149",
+            "CompanyId": "9398d4f66226f0fe84b6660bc160f62f",
+            "CompanyName": "Gorak Industries",
+            "CompanyCode": "GOI",
+            "ItemCount": 255,
+            "ItemCost": 93.9000015258789
+        },
+        {
+            "OrderId": "3e144cd44cf0a5c469b8fca2f8fe612f",
+            "CompanyId": "cc7ec156a6f93d4ccde8cb8f3537a4e8",
+            "CompanyName": "Taiyi Bureau",
+            "CompanyCode": "TA",
+            "ItemCount": 33663,
+            "ItemCost": 97.0
+        },
+        {
+            "OrderId": "404b9aafff4f667aaa2f7746a949d36b",
+            "CompanyId": "9b3a2dca2645b1694bd184818ccfc2ed",
+            "CompanyName": "TiaKia",
+            "CompanyCode": "TIA",
+            "ItemCount": 44664,
+            "ItemCost": 86.0
+        },
+        {
+            "OrderId": "4957e7fc0687dcf0fb00beacf482549f",
+            "CompanyId": "928e90515214b039cc4cef3d43ed7770",
+            "CompanyName": "THABICHI",
+            "CompanyCode": "TBCH",
+            "ItemCount": 2535,
+            "ItemCost": 84.5
+        },
+        {
+            "OrderId": "499f770196c0de783298792e820fb356",
+            "CompanyId": "57411cbc7666175b3691eb39711c0b73",
+            "CompanyName": "Rise of Mining Star",
+            "CompanyCode": "RMS",
+            "ItemCount": 5000,
+            "ItemCost": 121.0
+        },
+        {
+            "OrderId": "525b5fd4c54af1587f551e122407d33f",
+            "CompanyId": "68d282e10b2650dee8c75ff76cb16d38",
+            "CompanyName": "Lumber Liquidators",
+            "CompanyCode": "MM",
+            "ItemCount": 1,
+            "ItemCost": 119.0
+        },
+        {
+            "OrderId": "53dbac13da3f5a1fc8b9080566987289",
+            "CompanyId": "6e6edea42bd4dfd5e8862458db3e50eb",
+            "CompanyName": "Space Crafting Industries",
+            "CompanyCode": "SCIN",
+            "ItemCount": 11643,
+            "ItemCost": 84.80000305175781
+        },
+        {
+            "OrderId": "59e8070779830895b56de9a9d55dd58b",
+            "CompanyId": "68d282e10b2650dee8c75ff76cb16d38",
+            "CompanyName": "Lumber Liquidators",
+            "CompanyCode": "MM",
+            "ItemCount": 300000,
+            "ItemCost": 130.0
+        },
+        {
+            "OrderId": "5d077e845356a99cc011c48410e5f3ef",
+            "CompanyId": "e84251b56475af4cadd53cf351b16a24",
+            "CompanyName": "Int'l Import-Export Trading Co",
+            "CompanyCode": "IIET",
+            "ItemCount": 47763,
+            "ItemCost": 86.4000015258789
+        },
+        {
+            "OrderId": "5dc60eab5887d6dfa6c5c67b0ddef718",
+            "CompanyId": "0b19a696af816b354f6980edac37c1b0",
+            "CompanyName": "Compound",
+            "CompanyCode": "GAIN",
+            "ItemCount": 52430,
+            "ItemCost": 120.0
+        },
+        {
+            "OrderId": "5e253dbe2677fcf4145732f6e18191e0",
+            "CompanyId": "01fd84b6d5655a0184a19c2292bc7116",
+            "CompanyName": "MinCorp",
+            "CompanyCode": "MICP",
+            "ItemCount": 13652,
+            "ItemCost": 84.5999984741211
+        },
+        {
+            "OrderId": "6f93f33c6dd6429bf5e389616ac71e47",
+            "CompanyId": "eedc6b7a016727ee1acc5a49011d908c",
+            "CompanyName": "DogeConomy",
+            "CompanyCode": "DOGE",
+            "ItemCount": 1,
+            "ItemCost": 121.0
+        },
+        {
+            "OrderId": "73386184ec56039c793f7cbaf51a82c4",
+            "CompanyId": "19ea9d568517c1574fb1ae302c0da3fa",
+            "CompanyName": "ONECON",
+            "CompanyCode": "ONN",
+            "ItemCount": 3,
+            "ItemCost": 101.0
+        },
+        {
+            "OrderId": "7ff6011429c99ffd1e3646e98e8a3851",
+            "CompanyId": "8d50d2175881e9316b4b2e6cf022a51e",
+            "CompanyName": "banda198",
+            "CompanyCode": "B198",
+            "ItemCount": 50000,
+            "ItemCost": 115.0
+        },
+        {
+            "OrderId": "8040b2d05539c635a696edb7aa326c10",
+            "CompanyId": "57411cbc7666175b3691eb39711c0b73",
+            "CompanyName": "Rise of Mining Star",
+            "CompanyCode": "RMS",
+            "ItemCount": 5000,
+            "ItemCost": 121.0
+        },
+        {
+            "OrderId": "846f343388e2e0d58e97652787a85fa0",
+            "CompanyId": "23f650971b43f72cdb428defa0cd7cd0",
+            "CompanyName": "Castrop-Rauxel Holdings",
+            "CompanyCode": "CRH",
+            "ItemCount": 8960,
+            "ItemCost": 85.0
+        },
+        {
+            "OrderId": "8f9eeb181b254c149e499cecbf9fa0ee",
+            "CompanyId": "68d282e10b2650dee8c75ff76cb16d38",
+            "CompanyName": "Lumber Liquidators",
+            "CompanyCode": "MM",
+            "ItemCount": 50000,
+            "ItemCost": 200.0
+        },
+        {
+            "OrderId": "98dcc7f3f77ff19476a95b98a039d1d4",
+            "CompanyId": "aed9bf1516ac3535d9ac86093b6ed7d3",
+            "CompanyName": "Feck Industries",
+            "CompanyCode": "FCK",
+            "ItemCount": 6522,
+            "ItemCost": 118.0
+        },
+        {
+            "OrderId": "9d9328ee102e2f4e74c5783ecd24b9ad",
+            "CompanyId": "a13eac31e6ac894649202e797402da1d",
+            "CompanyName": "Ascensus",
+            "CompanyCode": "ACS",
+            "ItemCount": 4392,
+            "ItemCost": 87.0
+        },
+        {
+            "OrderId": "b6c35e1f951c66551448b6f81a639c1f",
+            "CompanyId": "aed9bf1516ac3535d9ac86093b6ed7d3",
+            "CompanyName": "Feck Industries",
+            "CompanyCode": "FCK",
+            "ItemCount": 7360,
+            "ItemCost": 120.0
+        },
+        {
+            "OrderId": "bdd6e7ee9a3be65a43b290cfd998101e",
+            "CompanyId": "b2b59e4e7c3fc99aa4d911ca9a38a0d4",
+            "CompanyName": "NEO Charter Exploration Market Maker",
+            "CompanyCode": "NCMM",
+            "ItemCount": null,
+            "ItemCost": 121.0
+        },
+        {
+            "OrderId": "c67050d921e9724a1629658259d9d30f",
+            "CompanyId": "ac0dbfef1f69ace3571644dc2a7143bd",
+            "CompanyName": "Entropy",
+            "CompanyCode": "ENTP",
+            "ItemCount": 7669,
+            "ItemCost": 84.69999694824219
+        },
+        {
+            "OrderId": "e37e15b28df49779eaefb2f2bda39e9f",
+            "CompanyId": "8afd3135b2f758754b5d0b704657c2b4",
+            "CompanyName": "Cygnus",
+            "CompanyCode": "CNS",
+            "ItemCount": 10825,
+            "ItemCost": 84.9000015258789
+        },
+        {
+            "OrderId": "e4d8fa248b617aab072b2be498cb594c",
+            "CompanyId": "68d282e10b2650dee8c75ff76cb16d38",
+            "CompanyName": "Lumber Liquidators",
+            "CompanyCode": "MM",
+            "ItemCount": 320000,
+            "ItemCost": 160.0
+        }
+    ],
+    "ExchangeName": "Moria Station Commodity Exchange",
+    "CXDataModelId": "e4545bd47a7d638739bcf3e31bbb86c8",
+    "MaterialName": "drinkingWater",
+    "MaterialId": "4fca6f5b5e6c3b8a1b887c6dc99db146",
+    "Currency": "NCC",
+    "Price": 84.5,
+    "PriceTimeEpochMs": "2025-06-02T08:04:44.395000Z",
+    "High": 84.5999984741211,
+    "AllTimeHigh": 121.0,
+    "Low": 84.5,
+    "AllTimeLow": 19.0,
+    "Traded": 9313,
+    "VolumeAmount": 787833.3125,
+    "NarrowPriceBandLow": 19.0,
+    "NarrowPriceBandHigh": 121.0,
+    "WidePriceBandLow": 19.0,
+    "WidePriceBandHigh": 121.0,
+    "UserNameSubmitted": "TAIYI",
+    "Timestamp": "2025-06-02T08:13:23.838025"
+}
