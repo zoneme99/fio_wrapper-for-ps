@@ -16,13 +16,13 @@ fio = FIO()
 #print(type(json.loads(fio.Exchange.get('DW.NC1').model_dump_json())))
 #exit()
 
-data = json.loads(fio.Recipe.all().model_dump_json())
+recipes = json.loads(fio.Recipe.all().model_dump_json())
 
 
 
 
 
-def async_market_fetch(recipes):
+def async_market_fetch(recipes, exchange_ticker):
     
     def gather_tickers(recipes):
         tickers = list()
@@ -62,38 +62,71 @@ def async_market_fetch(recipes):
 
     
     tickers = gather_tickers(recipes)
-    result = asyncio.run(gather_ticker_info(tickers, 'NC1'))
+    result = asyncio.run(gather_ticker_info(tickers, exchange_ticker))
     market_info = dict(zip(tickers, result))
     return market_info
   
 
 
 
-def recipe_value_returns(recipes, market_info, buildings_filter):
+def recipe_value_returns(recipes, market_info, buildings_filter=[], input_filter=[], output_filter=[], percentage=True):
     profit_recipes = list()
-    input_sum = 0
-    output_sum = 0
+    profit_string = list()
     for recipe in recipes:
-        if recipe['BuildingTicker'] in buildings_filter:
-
+        input_mem = True
+        output_mem = True
+        input_sum = 0
+        input_tickers = list()
+        output_sum = 0
+        output_tickers = list()
+        if recipe['BuildingTicker'] in buildings_filter or len(buildings_filter) == 0:
+            error = False
             for input in recipe['Inputs']:
-                input_sum += market_info[input['Ticker']]['Ask'] * input['Amount']
-            for output in recipe['outputs']:
-                output_sum += market_info[output['Ticker']]['Bid'] * output['Amount']
+                if len(input) == 0:
+                    continue
+                if input['Ticker'] in input_filter or len(input_filter) == 0:
+                    input_mem = False
+                ask_price = market_info[input['Ticker']]['Ask']
+                if ask_price == None:
+                    error = True
+                    break
+                input_sum +=  ask_price * input['Amount']
+                input_tickers.append(input['Ticker'])
+            for output in recipe['Outputs']:
+                if len(output) == 0:
+                    continue
+                if output['Ticker'] in output_filter or len(output_filter) == 0:
+                    output_mem = False            
+                bid_price = market_info[output['Ticker']]['Bid']
+                if bid_price == None:
+                    error = True
+                    break
+                output_sum += bid_price * output['Amount']
+                output_tickers.append(output['Ticker'])
+            if len(input_tickers) == 0 or len(output_tickers) == 0 or error == True or input_mem or output_mem:
+                continue
             percent_profit = (output_sum - input_sum) / input_sum
+            profit = output_sum - input_sum
+            profit_recipes.append((output_tickers, input_tickers, recipe['BuildingTicker'] ,percent_profit, profit))
+    if percentage:
+        filter_num = 3
+    else:
+        filter_num = 4
+
+    profit_recipes = sorted(profit_recipes, key= lambda x: x[filter_num], reverse=True)
+
+    for output, input, building, perc_profit, profit in profit_recipes:
+        profit_string.append((f'Outputs: {output}, Inputs: {input}, Building: [{building}], Profit %/cash: {perc_profit:.2f} % / {int(profit)}'))
+    return profit_string
 
 
 
 
-market_info = async_market_fetch(data)
+#market_info = async_market_fetch(recipes, 'NC1')
+with open('custom_scripts/market_info.json', 'r') as f:
+    market_info = json.load(f)
 
-
-
-
-        #print(key, recipe[key])
-    #break
-                #for ticker, quantity in dict2.values():
-                    #print(ticker)
-                    #print(f'nice ticker: {ticker} and nice amount {quantity}')
-# Print results
-#print(material.model_dump_json())
+pioneers = ['BMP','FRM','FP','INC','PP1', 'SME', 'WEL']
+profit_list = recipe_value_returns(recipes, market_info, buildings_filter=['FRM'], percentage=False)
+for profit in profit_list:
+    print(profit)
