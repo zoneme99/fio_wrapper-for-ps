@@ -69,7 +69,7 @@ def async_market_fetch(recipes, exchange_ticker):
 
 
 
-def recipe_value_returns(recipes, market_info, buildings_filter=[], input_filter=[], output_filter=[], percentage=True):
+def recipe_value_returns(recipes, market_info, buildings_filter=[], input_filter=[], output_filter=[], sort_method=True):
     profit_recipes = list()
     profit_string = list()
     for recipe in recipes:
@@ -107,16 +107,20 @@ def recipe_value_returns(recipes, market_info, buildings_filter=[], input_filter
                 continue
             percent_profit = (output_sum - input_sum) / input_sum
             profit = output_sum - input_sum
-            profit_recipes.append((output_tickers, input_tickers, recipe['BuildingTicker'] ,percent_profit, profit))
-    if percentage:
-        filter_num = 3
-    else:
-        filter_num = 4
+            profit_hour = profit / (recipe['TimeMs'] / (1000*60*60))
+            profit_recipes.append((output_tickers, input_tickers, recipe['BuildingTicker'] ,percent_profit, profit, profit_hour))
+    match sort_method:
+        case 'percentage':
+            filter_num = 3
+        case 'profit':
+            filter_num = 4
+        case 'time':
+            filter_num = 5
 
     profit_recipes = sorted(profit_recipes, key= lambda x: x[filter_num], reverse=True)
 
-    for output, input, building, perc_profit, profit in profit_recipes:
-        profit_string.append((f'Outputs: {output}, Inputs: {input}, Building: [{building}], Profit %/cash: {perc_profit:.2f} % / {int(profit)}'))
+    for output, input, building, perc_profit, profit, profit_hour in profit_recipes:
+        profit_string.append((f'Outputs: {output}, Inputs: {input}, Building: [{building}], Profit %/cash: {perc_profit:.2f} % / {int(profit)} Profit/Hour: {profit_hour:.2f} P/H'))
     return profit_string
 
 
@@ -127,6 +131,7 @@ with open('custom_scripts/market_info.json', 'r') as f:
     market_info = json.load(f)
 
 pioneers = ['BMP','FRM','FP','INC','PP1', 'SME', 'WEL']
-profit_list = recipe_value_returns(recipes, market_info, buildings_filter=['FRM'], percentage=False)
+sort_methods = ['percentage','profit', 'time']
+profit_list = recipe_value_returns(recipes, market_info, buildings_filter=['FRM'], sort_method=sort_methods[1])
 for profit in profit_list:
     print(profit)
