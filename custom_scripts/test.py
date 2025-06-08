@@ -132,7 +132,8 @@ else:
         market_info = json.load(f)
 
 pioneers = ['BMP','FRM','FP','INC','PP1', 'SME', 'WEL']
+settlers = ['CHP', 'CLF', 'EDM', 'FER', 'FS', 'GF', 'HYF', 'PAC', 'PPF', 'POL', 'PP2', 'REF', 'UPF', 'WPL']
 sort_methods = ['percentage','profit', 'time']
-profit_list = recipe_value_returns(recipes, market_info, buildings_filter=['PP1'], sort_method=sort_methods[1])
+profit_list = recipe_value_returns(recipes, market_info,buildings_filter=['PP1'] , sort_method=sort_methods[2])
 for profit in profit_list:
     print(profit)
