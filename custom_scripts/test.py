@@ -105,7 +105,7 @@ def recipe_value_returns(recipes, market_info, buildings_filter=[], input_filter
                 output_tickers.append(output['Ticker'])
             if len(input_tickers) == 0 or len(output_tickers) == 0 or error == True or input_mem or output_mem:
                 continue
-            percent_profit = (output_sum - input_sum) / input_sum
+            percent_profit = ((output_sum - input_sum) / input_sum)*100
             profit = output_sum - input_sum
             profit_hour = profit / (recipe['TimeMs'] / (1000*60*60))
             profit_recipes.append((output_tickers, input_tickers, recipe['BuildingTicker'] ,percent_profit, profit, profit_hour))
@@ -132,6 +132,6 @@ with open('custom_scripts/market_info.json', 'r') as f:
 
 pioneers = ['BMP','FRM','FP','INC','PP1', 'SME', 'WEL']
 sort_methods = ['percentage','profit', 'time']
-profit_list = recipe_value_returns(recipes, market_info, buildings_filter=['FRM'], sort_method=sort_methods[1])
+profit_list = recipe_value_returns(recipes, market_info, buildings_filter=['PP1'], sort_method=sort_methods[1])
 for profit in profit_list:
     print(profit)
