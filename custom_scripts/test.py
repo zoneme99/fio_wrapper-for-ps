@@ -124,11 +124,12 @@ def recipe_value_returns(recipes, market_info, buildings_filter=[], input_filter
     return profit_string
 
 
-
-
-#market_info = async_market_fetch(recipes, 'NC1')
-with open('custom_scripts/market_info.json', 'r') as f:
-    market_info = json.load(f)
+live_data = True
+if live_data:
+    market_info = async_market_fetch(recipes, 'NC1')
+else:
+    with open('custom_scripts/market_info.json', 'r') as f:
+        market_info = json.load(f)
 
 pioneers = ['BMP','FRM','FP','INC','PP1', 'SME', 'WEL']
 sort_methods = ['percentage','profit', 'time']
