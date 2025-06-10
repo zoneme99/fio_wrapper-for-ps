@@ -2,6 +2,7 @@ from statistics import quantiles
 from fio_wrapper import FIO
 import json
 import asyncio
+import os
 
 # Initialize FIO client
 fio = FIO()
@@ -123,17 +124,32 @@ def recipe_value_returns(recipes, market_info, buildings_filter=[], input_filter
         profit_string.append((f'Outputs: {output}, Inputs: {input}, Building: [{building}], Profit %/cash: {perc_profit:.2f} % / {int(profit)} Profit/Hour: {profit_hour:.2f} P/H'))
     return profit_string
 
+def terminal_menu(title, option_list):
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print(title)
+    print('')
+    for index, option in enumerate(option_list):
+        print(f'{index+1}. {option}') # starting with 1, easier input on laptop
+    while True:
+    num = input('Insert number from list: ')
+    if isinstance(num, int):
+        if 0 < num <= len(option_list):
+            return option_list[num-1]
+    
 
-live_data = True
-if live_data:
-    market_info = async_market_fetch(recipes, 'NC1')
-else:
-    with open('custom_scripts/market_info.json', 'r') as f:
-        market_info = json.load(f)
+def main():
+    live_data = True
+    if live_data:
+        market_info = async_market_fetch(recipes, 'NC1')
+    else:
+        with open('custom_scripts/market_info.json', 'r') as f:
+            market_info = json.load(f)
 
-pioneers = ['BMP','FRM','FP','INC','PP1', 'SME', 'WEL']
-settlers = ['CHP', 'CLF', 'EDM', 'FER', 'FS', 'GF', 'HYF', 'PAC', 'PPF', 'POL', 'PP2', 'REF', 'UPF', 'WPL']
-sort_methods = ['percentage','profit', 'time']
-profit_list = recipe_value_returns(recipes, market_info,buildings_filter=['PP1'] , sort_method=sort_methods[2])
-for profit in profit_list:
-    print(profit)
+    pioneers = ['BMP','FRM','FP','INC','PP1', 'SME', 'WEL']
+    settlers = ['CHP', 'CLF', 'EDM', 'FER', 'FS', 'GF', 'HYF', 'PAC', 'PPF', 'POL', 'PP2', 'REF', 'UPF', 'WPL']
+    sort_methods = ['percentage','profit', 'time']
+    profit_list = recipe_value_returns(recipes, market_info,buildings_filter=['PP1'] , sort_method=sort_methods[2])
+    for profit in profit_list:
+        print(profit)
+
+terminal_menu('Pls choose alternative:', ['cash','bankruptcy','liberation'])
