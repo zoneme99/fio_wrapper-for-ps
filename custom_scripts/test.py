@@ -8,6 +8,7 @@ import csv
 fio = FIO()
 
 path_to_csv = 'custom_scripts/custom.csv'
+
 pioneers = ['BMP','FRM','FP','INC','PP1', 'SME', 'WEL']
 settlers = ['CHP', 'CLF', 'EDM', 'FER', 'FS', 'GF', 'HYF', 'PAC', 'PPF', 'POL', 'PP2', 'REF', 'UPF', 'WPL']
 technicians = ['CLR', 'ELP', 'ECA', 'HWP', 'IVP', 'LAB', 'MCA', 'ORC', 'PHF', 'PP3', 'SKF', 'SCA', 'SD', 'TNP']
@@ -164,11 +165,6 @@ def terminal_menu(title, option_list):
     
 
 def main():
-
-    recipe_value_returns(recipes, market_info, sort_method=sort_methods[2])
-
-
-def test():
     recipes = json.loads(fio.Recipe.all().model_dump_json())
     market_info = async_market_fetch(recipes, 'NC1')
     while True:
@@ -201,8 +197,8 @@ def test():
                 for data in custom_data:
                     names.append(data[0])
                 while True:
-                    custom_option = terminal_menu('Search by listed custom filters below:', [*names, 'exit'])
-                    if custom_option == 'exit':
+                    custom_option = terminal_menu('Search by listed custom filters below:', [*names, 'Exit'])
+                    if custom_option == 'Exit':
                         break
                     for data in custom_data:
                         if data[0] == custom_option:
@@ -226,4 +222,4 @@ def test():
                 print('Welcome back for more market manipulation!')
                 exit()
 
-test()      
+main()      
